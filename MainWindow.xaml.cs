@@ -254,6 +254,7 @@ namespace TicTacToe_Game
 
             #region Draw Condition
             // Checking for no winner condition(game is a draw)
+            // FIX NEEDED! -> At the last move, there can still be a winner
             if (!mResults.Any(f => f == MarkType.Free)) 
             {
                 // Ending game
@@ -266,6 +267,7 @@ namespace TicTacToe_Game
                 });
             }
             #endregion
+       
         }
     }
 }
