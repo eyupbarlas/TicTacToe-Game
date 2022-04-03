@@ -257,6 +257,7 @@ namespace TicTacToe_Game
             // FIX NEEDED! -> At the last move, there can still be a winner
             if (!mResults.Any(f => f == MarkType.Free)) 
             {
+                MessageBox.Show("Game is a draw. Click any box.", "TicTacToe by Bzzman");
                 // Ending game
                 mGameEnded = true;
 
